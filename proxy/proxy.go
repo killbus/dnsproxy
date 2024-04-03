@@ -792,13 +792,13 @@ func (dctx *DNSContext) processECS(cliIP net.IP) {
 		cliAddr, _ = netip.AddrFromSlice(cliIP)
 	}
 
-	if !netutil.IsSpecialPurpose(cliAddr) {
-		// A Stub Resolver MUST set SCOPE PREFIX-LENGTH to 0.  See RFC 7871
-		// Section 6.
-		dctx.ReqECS = setECS(dctx.Req, cliIP, 0)
+	// if !netutil.IsSpecialPurpose(cliAddr) {
+	// A Stub Resolver MUST set SCOPE PREFIX-LENGTH to 0.  See RFC 7871
+	// Section 6.
+	dctx.ReqECS = setECS(dctx.Req, cliIP, 0)
 
-		log.Debug("dnsproxy: setting ecs: %s", dctx.ReqECS)
-	}
+	log.Debug("dnsproxy: setting ecs: %s", dctx.ReqECS)
+	// }
 }
 
 // newDNSContext returns a new properly initialized *DNSContext.
