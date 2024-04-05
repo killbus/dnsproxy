@@ -14,9 +14,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/AdguardTeam/dnsproxy/fastip"
-	proxynetutil "github.com/AdguardTeam/dnsproxy/internal/netutil"
-	"github.com/AdguardTeam/dnsproxy/upstream"
+	"github.com/killbus/dnsproxy/fastip"
+	proxynetutil "github.com/killbus/dnsproxy/internal/netutil"
+	"github.com/killbus/dnsproxy/upstream"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"
@@ -759,7 +759,7 @@ func (p *Proxy) cacheWorks(dctx *DNSContext) (ok bool) {
 		// In case of custom upstream cache is not configured, the global proxy
 		// cache cannot be used because different upstreams can return different
 		// results.
-		// See https://github.com/AdguardTeam/dnsproxy/issues/169.
+		// See https://github.com/killbus/dnsproxy/issues/169.
 		reason = "custom upstreams cache is not configured"
 	case dctx.Req.CheckingDisabled:
 		reason = "dnssec check disabled"

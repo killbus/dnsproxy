@@ -1,7 +1,7 @@
 [![Code Coverage](https://img.shields.io/codecov/c/github/AdguardTeam/dnsproxy/master.svg)](https://codecov.io/github/AdguardTeam/dnsproxy?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/AdguardTeam/dnsproxy)](https://goreportcard.com/report/AdguardTeam/dnsproxy)
-[![GolangCI](https://golangci.com/badges/github.com/AdguardTeam/dnsproxy.svg)](https://golangci.com/r/github.com/AdguardTeam/dnsproxy)
-[![Go Doc](https://godoc.org/github.com/AdguardTeam/dnsproxy?status.svg)](https://godoc.org/github.com/AdguardTeam/dnsproxy)
+[![Go Report Card](https://goreportcard.com/badge/github.com/killbus/dnsproxy)](https://goreportcard.com/report/AdguardTeam/dnsproxy)
+[![GolangCI](https://golangci.com/badges/github.com/killbus/dnsproxy.svg)](https://golangci.com/r/github.com/killbus/dnsproxy)
+[![Go Doc](https://godoc.org/github.com/killbus/dnsproxy?status.svg)](https://godoc.org/github.com/killbus/dnsproxy)
 
 # DNS Proxy <!-- omit in toc -->
 
@@ -31,7 +31,7 @@ There are several options how to install `dnsproxy`.
 2. Use the [official Docker image][docker].
 3. Build it yourself (see the instruction below).
 
-[releases]: https://github.com/AdguardTeam/dnsproxy/releases
+[releases]: https://github.com/killbus/dnsproxy/releases
 [docker]: https://hub.docker.com/r/adguard/dnsproxy
 
 ## How to build

@@ -4,7 +4,7 @@ import (
 	"net/netip"
 	"testing"
 
-	"github.com/AdguardTeam/dnsproxy/upstream"
+	"github.com/killbus/dnsproxy/upstream"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/miekg/dns"
 	"github.com/stretchr/testify/assert"

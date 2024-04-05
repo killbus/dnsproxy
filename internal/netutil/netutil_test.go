@@ -5,7 +5,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/AdguardTeam/dnsproxy/internal/netutil"
+	"github.com/killbus/dnsproxy/internal/netutil"
 	"github.com/stretchr/testify/assert"
 )
 

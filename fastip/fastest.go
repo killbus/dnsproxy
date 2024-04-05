@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AdguardTeam/dnsproxy/upstream"
+	"github.com/killbus/dnsproxy/upstream"
 	"github.com/AdguardTeam/golibs/cache"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"

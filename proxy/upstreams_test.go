@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AdguardTeam/dnsproxy/upstream"
+	"github.com/killbus/dnsproxy/upstream"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

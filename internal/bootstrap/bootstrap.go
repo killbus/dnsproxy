@@ -11,7 +11,7 @@ import (
 	"slices"
 	"time"
 
-	proxynetutil "github.com/AdguardTeam/dnsproxy/internal/netutil"
+	proxynetutil "github.com/killbus/dnsproxy/internal/netutil"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"

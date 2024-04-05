@@ -3,7 +3,7 @@ package proxy
 import (
 	"net/netip"
 
-	"github.com/AdguardTeam/dnsproxy/proxyutil"
+	"github.com/killbus/dnsproxy/proxyutil"
 	"github.com/miekg/dns"
 )
 

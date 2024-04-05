@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/AdguardTeam/dnsproxy/upstream"
+	"github.com/killbus/dnsproxy/upstream"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/miekg/dns"

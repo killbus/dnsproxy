@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/AdguardTeam/dnsproxy/internal/bootstrap"
-	"github.com/AdguardTeam/dnsproxy/internal/dnsproxytest"
+	"github.com/killbus/dnsproxy/internal/bootstrap"
+	"github.com/killbus/dnsproxy/internal/dnsproxytest"
 	"github.com/AdguardTeam/golibs/testutil"
 	"github.com/miekg/dns"
 	"github.com/stretchr/testify/assert"

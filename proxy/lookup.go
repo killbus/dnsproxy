@@ -4,9 +4,9 @@ import (
 	"context"
 	"net/netip"
 
-	proxynetutil "github.com/AdguardTeam/dnsproxy/internal/netutil"
-	"github.com/AdguardTeam/dnsproxy/proxyutil"
-	"github.com/AdguardTeam/dnsproxy/upstream"
+	proxynetutil "github.com/killbus/dnsproxy/internal/netutil"
+	"github.com/killbus/dnsproxy/proxyutil"
+	"github.com/killbus/dnsproxy/upstream"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/miekg/dns"
 )

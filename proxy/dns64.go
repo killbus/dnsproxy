@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/netip"
 
-	"github.com/AdguardTeam/dnsproxy/upstream"
+	"github.com/killbus/dnsproxy/upstream"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"
 	"github.com/miekg/dns"

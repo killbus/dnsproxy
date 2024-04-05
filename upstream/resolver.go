@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AdguardTeam/dnsproxy/internal/bootstrap"
-	"github.com/AdguardTeam/dnsproxy/proxyutil"
+	"github.com/killbus/dnsproxy/internal/bootstrap"
+	"github.com/killbus/dnsproxy/proxyutil"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/miekg/dns"

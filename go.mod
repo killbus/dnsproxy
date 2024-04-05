@@ -1,4 +1,4 @@
-module github.com/AdguardTeam/dnsproxy
+module github.com/killbus/dnsproxy
 
 go 1.21.8
 

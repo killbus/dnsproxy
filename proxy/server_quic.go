@@ -9,7 +9,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/AdguardTeam/dnsproxy/proxyutil"
+	"github.com/killbus/dnsproxy/proxyutil"
 	"github.com/AdguardTeam/golibs/errors"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/netutil"

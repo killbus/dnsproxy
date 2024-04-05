@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/AdguardTeam/dnsproxy/upstream"
+	"github.com/killbus/dnsproxy/upstream"
 	glcache "github.com/AdguardTeam/golibs/cache"
 	"github.com/AdguardTeam/golibs/log"
 	"github.com/AdguardTeam/golibs/mathutil"
@@ -617,7 +617,7 @@ func filterMsg(dst, m *dns.Msg, ad, do bool, ttl uint32) {
 	// requested.
 	//
 	// See https://datatracker.ietf.org/doc/html/rfc4035#section-3.2.1 and
-	// https://github.com/AdguardTeam/dnsproxy/issues/144.
+	// https://github.com/killbus/dnsproxy/issues/144.
 	dst.Answer = filterRRSlice(m.Answer, do, ttl, m.Question[0].Qtype)
 	dst.Ns = filterRRSlice(m.Ns, do, ttl, dns.TypeNone)
 	dst.Extra = filterRRSlice(m.Extra, do, ttl, dns.TypeNone)
