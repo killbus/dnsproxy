@@ -105,13 +105,15 @@ func setECS(m *dns.Msg, ip net.IP, scope uint8) (subnet *net.IPNet) {
 	const (
 		// defaultECSv4 is the default length of network mask for IPv4 address
 		// in ECS option.
-		defaultECSv4 = 24
+		// defaultECSv4 = 24
+		defaultECSv4 = 32
 
 		// defaultECSv6 is the default length of network mask for IPv6 address
 		// in ECS.  The size of 7 octets is chosen as a reasonable minimum since
 		// at least Google's public DNS refuses requests containing the options
 		// with longer network masks.
-		defaultECSv6 = 56
+		// defaultECSv6 = 56
+		defaultECSv6 = 128
 	)
 
 	e := &dns.EDNS0_SUBNET{
