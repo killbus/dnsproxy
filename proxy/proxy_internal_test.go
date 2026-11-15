@@ -455,14 +455,14 @@ func TestSetECS(t *testing.T) {
 		subnet := setECS(m, ip, 16)
 
 		ones, _ := subnet.Mask.Size()
-		assert.Equal(t, 24, ones)
+		assert.Equal(t, 32, ones)
 
 		var scope int
 		subnet, scope = ecsFromMsg(m)
 		assert.Equal(t, ip.Mask(subnet.Mask), subnet.IP)
 
 		ones, _ = subnet.Mask.Size()
-		assert.Equal(t, 24, ones)
+		assert.Equal(t, 32, ones)
 		assert.Equal(t, 16, scope)
 	})
 
@@ -473,14 +473,14 @@ func TestSetECS(t *testing.T) {
 		subnet := setECS(m, ip, 48)
 
 		ones, _ := subnet.Mask.Size()
-		assert.Equal(t, 56, ones)
+		assert.Equal(t, 128, ones)
 
 		var scope int
 		subnet, scope = ecsFromMsg(m)
 		assert.Equal(t, ip.Mask(subnet.Mask), subnet.IP)
 
 		ones, _ = subnet.Mask.Size()
-		assert.Equal(t, 56, ones)
+		assert.Equal(t, 128, ones)
 		assert.Equal(t, 48, scope)
 	})
 }
