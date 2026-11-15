@@ -1052,11 +1052,11 @@ func (dctx *DNSContext) processECS(cliIP net.IP, l *slog.Logger) {
 		cliAddr, _ = netip.AddrFromSlice(cliIP)
 	}
 
-	if !netutil.IsSpecialPurpose(cliAddr) {
-		// A Stub Resolver MUST set SCOPE PREFIX-LENGTH to 0.  See RFC 7871
-		// Section 6.
-		dctx.ReqECS = setECS(dctx.Req, cliIP, 0)
+	// if !netutil.IsSpecialPurpose(cliAddr) {
+	// A Stub Resolver MUST set SCOPE PREFIX-LENGTH to 0.  See RFC 7871
+	// Section 6.
+	dctx.ReqECS = setECS(dctx.Req, cliIP, 0)
 
-		l.Debug("setting ecs", "subnet", dctx.ReqECS)
-	}
+	l.Debug("setting ecs", "subnet", dctx.ReqECS)
+	// }
 }
